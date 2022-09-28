@@ -11,6 +11,8 @@ namespace Entities.Concrete
     {
         public string Title { get; set; }
 
-        public List<Mission> Missions { get; set; }
+
+        // hiç bir görev olmadan group olusturabilir
+        public List<Mission>? Missions { get; set; }
     }
 }

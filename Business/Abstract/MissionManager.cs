@@ -10,14 +10,14 @@ namespace Business.Abstract
 
         MissionRepository missionRepository = new MissionRepository();
 
-        public Mission AddMission(Mission mission)
+        public Mission AddT(Mission t)
         {
-            return missionRepository.TAdd(mission);
+                return missionRepository.TAdd(t);
         }
 
-        public void DeleteMission(int id)
+        public void DeleteT(int id)
         {
-            throw new NotImplementedException();
+                missionRepository.TDelete(id);
         }
 
         public List<Mission> GetAll()
@@ -25,9 +25,9 @@ namespace Business.Abstract
             return missionRepository.GetAll();
         }
 
-        public void  UpdateMission(int id, Mission mission)
+        public void UpdateT(int id, Mission t)
         {
-              missionRepository.TUpdate(id, mission);
+            missionRepository.TUpdate(id, t);   
         }
     }
 }

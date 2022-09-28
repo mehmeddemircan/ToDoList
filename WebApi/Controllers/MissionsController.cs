@@ -26,7 +26,7 @@ namespace WebApi.Controllers
 
         public Mission AddMission(Mission mission)
         {
-            return missionManager.AddMission(mission); 
+            return missionManager.AddT(mission); 
         }
 
 
@@ -36,7 +36,7 @@ namespace WebApi.Controllers
         public void  UpdateMission (int id , Mission mission)
         {
             mission.Id = id; 
-            missionManager.UpdateMission(id, mission); 
+            missionManager.UpdateT(id, mission); 
         }
 
 
@@ -44,7 +44,7 @@ namespace WebApi.Controllers
 
         public void DeleteMission(int id)
         {
-            missionManager.DeleteMission(id);
+            missionManager.DeleteT(id);
         }
 
 
